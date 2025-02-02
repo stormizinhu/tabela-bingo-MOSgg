@@ -1,0 +1,116 @@
+:root {
+    /* Cores */
+    --amarelo: #feff00;
+    --branco: white;
+    --cinza: #b7b7b7;
+    --preto: black;
+    --roxo: #9900ff;
+    --roxo-escuro: #100033;
+    --verde: #01ff01;
+
+    /* Font Size */
+    --card-size: 60px;
+    --grande: 36px;
+    --media: 24px;
+    --pequena: 12px;
+
+    /* Pixels */
+    --g: 30px;
+    --m: 20px;
+    --margin: 3px;
+    --p: 10px;
+
+    /* Transition Time */
+    --time: 0.3s;
+}
+
+body {
+    background-color: var(--roxo-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.main-container {
+    align-items: center;
+    background-color: var(--roxo-escuro);
+    border-radius: var(--p);
+    display: flex;
+    flex-direction: column;
+    margin: var(--m) auto;
+    padding: var(--p);
+    width: fit-content;
+}
+
+.bingo-title {
+    background-color: var(--verde);
+    border-radius: var(--p);
+    color: var(--preto);
+    font-size: var(--grande);
+    font-weight: bold;
+    margin-bottom: var(--p);
+    padding: var(--p);
+    width: 98%;
+}
+
+.bingo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.bingo-header {
+    align-items: center;
+    background-color: var(--roxo);
+    border-radius: var(--p);
+    color: var(--branco);
+    font-size: var(--media);
+    font-weight: bold;
+    height: var(--p);
+    justify-content: center;
+    line-height: var(--p);
+    margin-right: var(--margin);
+    padding: var(--p);
+    width: var(--card-size);
+}
+
+.bingo-card {
+    background-color: var(--cinza);
+    border: 1px solid var(--roxo-escuro);
+    border-radius: var(--p);
+    cursor: pointer;
+    display: flex;
+    font-size: var(--media);
+    font-weight: bold;
+    height: var(--g);
+    justify-content: center;
+    margin: var(--margin);
+    transition: background-color var(--time), font-weight var(--time);
+    width: var(--card-size);
+}
+
+.bingo-card.clicked {
+    background-color: var(--amarelo);
+}
+
+.button {
+    background-color: var(--roxo);
+    border-radius: var(--p);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: var(--media);
+    font-weight: bold;
+    margin-top: var(--m);
+    padding: var(--p);
+    transition: background-color var(--time), font-weight var(--time);
+    width: fit-content;
+}
+.button:hover {
+    background-color: var(--verde);
+    color: var(--roxo-escuro);
+}
