@@ -13,7 +13,7 @@ O botão "Salvar como PNG" tira um print da tabela, para conferecia posterior.
 
 - `HTML`
 - `CSS`
-- `JavaScritp`
+- `JavaScript`
 
 ## Instalação
 
